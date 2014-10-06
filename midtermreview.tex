@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{CS311H Midterm Notes}
+
+\author{Arnav Sastry}
+
+\date{Tuesday, October 7}
+
+\begin{document}
+\maketitle
+
+\section{Propositional Logic}
+Proposition is a statement that is either true or false
+\begin{itemize}
+    \item if $p \to q$
+    \item Converse: $q \to p$
+    \item Inverse: $\neg p \to \neg q$
+    \item Contrapositive: $\neg q \to \neg p$
+\end{itemize}
+Precedence:
+\begin{description}
+    \item[negation]
+    \item[conjunction] $\land$
+    \item[disjunction] $\lor$
+    \item[implication] $\to$
+    \item[biconditionals] $\leftrightarrow$
+\end{description}
+Proving Satisfiability, Unsatisfiability, and Contingent
+\[ F_1 \implies F_2 \text{ iff } F_1 \to F_2 \text{ is valid}\]
+\subsection{Important Equivalences}
+\begin{description}
+    \item[Double Negation] $\neg \neg p \equiv p$
+    \item[Identity] $p \land T \equiv p \qquad p \lor F \equiv p$
+    \item[Domination] $p \lor T \equiv T \qquad p \land F \equiv F$
+    \item[Idempotent] $p \land p \equiv p \qquad p \lor p \equiv p$
+    \item[Negation] $p \land \neg p \equiv F \qquad p \lor \neg p \equiv T$
+    \item[Commutative] $p \land q \equiv q \land p \qquad p \lor q \equiv q \lor p$
+    \item[Associative] $(p \land q) \land r \equiv p \land (q \land r)$
+\end{description}
+
+\section{First Order Logic}
+
+\section{Proof Methods}
+
+\section{Sets}
+
+\section{Functions}
+
+\section{Number Theory}
+
+\section{Misc.}
+\begin{description}
+    \item[P] Can be solved and verified in polynomial time
+    \item[NP] Can be verified in polynomial time
+    \item[NP-Hard] Problems can be reduced in polynomial time from NP to NP Hard
+    \item[NP-Complete] Intersection of NP and NP-Hard
+\end{description}
+\end{document}
