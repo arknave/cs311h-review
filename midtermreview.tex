@@ -76,23 +76,13 @@ Proving $p \to q$
 
 \section{Misc.}
 \subsection{Halting Problem}
-\begin{displaymath}
-    h(x) = \left\{
-        \begin{array}{lr}
-            1 & \text{if program $i$ halts on input $x$}\\
-            0 & \text{otherwise}
-        \end{array}
-    \right.
-\end{displaymath}
-Given any arbitrary total computable binary function $f$, the following partial function $g$ is also computable by some program $e$.
-\begin{displaymath}
-    g(i) = \left\{
-        \begin{array}{lr}
-            0 & f(i, i) = 0\\
-            undefined & \text{otherwise}
-        \end{array}
-    \right.
-\end{displaymath}
+Is there a program $P$ such that for any input program $P'$ and any input $w$, $P$ can determine whether $P'$ halts with input $w$? $P$ needs to terminate on all inputs and give a yes/no answer. This is undecidable. Let $P'$ be a program that halts iff its input does not halt on itself. If we run $P'$ on itself, then there are two cases.
+\begin{description}
+    \item[$P'$ halts on itself] This means that $P$ says $P'$ does not halt on itself, but it does.
+    \item[$P'$ does not halt on itself] This means that $P$ says $P'$ does halt on itself, which it doesn't.
+\end{description}
+
+\subsection{Complexity}
 \begin{description}
     \item[P] Can be solved and verified in polynomial time
     \item[NP] Can be verified in polynomial time
