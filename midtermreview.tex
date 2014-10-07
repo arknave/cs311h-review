@@ -41,11 +41,21 @@ Proving Satisfiability, Unsatisfiability, and Contingent
     \item[Negation] $p \land \neg p \equiv F \qquad p \lor \neg p \equiv T$
     \item[Commutative] $p \land q \equiv q \land p \qquad p \lor q \equiv q \lor p$
     \item[Associative] $(p \land q) \land r \equiv p \land (q \land r)$
+    \item[Distributive \#1] $p \land (q \lor r) \equiv (p \land q) \lor (p \land r)$
+    \item[Distributive \#2] $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$
+    \item[Absorption Law] $a \lor (a \land b) \equiv a \land (a \lor b) \equiv a$
 \end{description}
 
 \section{First Order Logic}
 
 \section{Proof Methods}
+Proving $p \to q$
+\begin{description}
+    \item[Direct Proof] Prove $p \to q$ is valid.
+    \item[Contraposition Proof] Prove $\neg q \to \neg p$ is valid.
+    \item[Contradiction Proof] Prove $p \to \neg q$ is unsatisfiable.
+    \item[Proof by cases] Break up $p$ into different cases and prove recursively.
+\end{description}
 
 \section{Sets}
 
@@ -60,4 +70,5 @@ Proving Satisfiability, Unsatisfiability, and Contingent
     \item[NP-Hard] Problems can be reduced in polynomial time from NP to NP Hard
     \item[NP-Complete] Intersection of NP and NP-Hard
 \end{description}
+
 \end{document}
