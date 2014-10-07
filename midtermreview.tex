@@ -58,7 +58,17 @@ Proving Satisfiability, Unsatisfiability, and Contingent
     \item[For $p$ it is necessary that $q$:] $p \to q$
 \end{description}
 \section{First Order Logic}
-
+\subsection{Important Equivalences}
+\begin{description}
+    \item[Modus Ponens] $\phi_{1}.\qquad \phi_{1} \to \phi_{2}.\qquad \phi_{2}$
+    \item[Modus Tollens] $\phi_{1} \to \phi_{2}.\qquad \neg\phi_{2}.\qquad \neg\phi_{1}$
+    \item[Hypothetical Syllogism] $\phi_{1} \to \phi_{2}.\qquad \phi_{2} \to \phi_{3}.\qquad \phi_{1} \to \phi_{3}$
+    \item[Or Introduction] $\phi_{1}.\qquad \phi_{1} \lor \phi_{2}.$
+    \item[Or Elimination] $\phi_{1} \lor \phi_{2}.\qquad \neg\phi_{2}.\qquad \phi_{1}.$
+    \item[And Introduction] $\phi_{1}.\qquad \phi_{2}.\qquad \phi_{1} \land \phi_{2}.$
+    \item[And Elimination] $\phi_{1} \land \phi_{2}.\qquad \phi_{1}.$
+    \item[Resolution] $\phi_{1} \lor \phi_{2}.\qquad \neg\phi_{1} \lor \phi_{3}.\qquad \phi_{2} \lor \phi_{3}.$
+\end{description}
 \section{Proof Methods}
 Proving $p \to q$
 \begin{description}
