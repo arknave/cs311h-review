@@ -75,6 +75,24 @@ Proving $p \to q$
 \section{Number Theory}
 
 \section{Misc.}
+\subsection{Halting Problem}
+\begin{displaymath}
+    h(x) = \left\{
+        \begin{array}{lr}
+            1 & \text{if program $i$ halts on input $x$}\\
+            0 & \text{otherwise}
+        \end{array}
+    \right.
+\end{displaymath}
+Given any arbitrary total computable binary function $f$, the following partial function $g$ is also computable by some program $e$.
+\begin{displaymath}
+    g(i) = \left\{
+        \begin{array}{lr}
+            0 & f(i, i) = 0\\
+            undefined & \text{otherwise}
+        \end{array}
+    \right.
+\end{displaymath}
 \begin{description}
     \item[P] Can be solved and verified in polynomial time
     \item[NP] Can be verified in polynomial time
